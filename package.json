@@ -1,0 +1,26 @@
+{
+	"name": "voicecode",
+	"displayName": "VoiceCode",
+	"description": "VoiceCode (voicecode.io) integration - write code and control everything with voice commands",
+	"version": "0.0.1",
+	"publisher": "VoiceCode",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.sayHello"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [{
+			"command": "extension.sayHello",
+			"title": "Hello World"
+		}]
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	}
+}
