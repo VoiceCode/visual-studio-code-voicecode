@@ -1,13 +1,23 @@
-# README
-## This is the README for your extension "voicecode" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Visual Studio Code / VoiceCode Integration Package
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+This package integrates VoiceCode http://voicecode.io with Visual Studio Code code.visualstudio.com
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+This integration is needed because many VoiceCode voice commands are more sophisticated than simply pressing keys. For example, a command like "select next curly brace".
 
-** Enjoy!**
+The integration is handled via unix sockets for communicating between Visual Studio Code (VSC) and VoiceCode.
+
+## Setup
+
+### Connecting
+
+#### Automatically On Startup
+
+#### Manually
+
+### Triggering existing VSC commands
+
+In VoiceCode simply do:
+
+```coffeescript
+@runVscCommand "trigger", "tree-view:add-file"
+```
