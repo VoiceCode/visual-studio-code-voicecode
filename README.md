@@ -1,8 +1,8 @@
 # Visual Studio Code / VoiceCode Integration Package
 
-This package integrates [VoiceCode](http://voicecode.io) with [Visual Studio Code](code.visualstudio.com)
+This is a [Visual Studio Code](code.visualstudio.com) package/plugin that lets [VoiceCode](http://voicecode.io) control Visual Studio Code
 
-This integration is needed because many VoiceCode voice commands are more sophisticated than simply pressing keys. For example, a command like "select next curly brace" or "select lines 10 through 15".
+This integration is needed because many VoiceCode voice commands are more sophisticated than simply pressing keys or clicking the mouse. For example, a command that *selects the next curly brace*, or a command that *extends the current selection(s) forward until the next comma*, etc.
 
 ## Setup
 
